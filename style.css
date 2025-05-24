@@ -30,3 +30,19 @@ body {
   margin-right: 5px;
   font-size: 18px;
 }
+
+/* Regras adicionadas para colorir os ícones */
+
+.icon-whatsapp {
+  color: #25D366;
+}
+
+.icon-instagram {
+  color: #E1306C;
+}
+
+/* Efeito hover (opcional) */
+.icon-whatsapp:hover,
+.icon-instagram:hover {
+  opacity: 0.8;
+}
