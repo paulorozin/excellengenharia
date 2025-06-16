@@ -16,17 +16,32 @@
       color: #333;
     }
 
+    /* Envolve tudo centralizado */
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
+      padding: 20px;
+    }
+
     .container {
       max-width: 900px;
-      margin: 0 auto;
-      padding: 30px 20px;
+      width: 100%;
       text-align: center;
     }
 
     .logo {
-      max-width: 240px;
+      max-width: 312px; /* Aumentado 30% */
       height: auto;
       margin-bottom: 30px;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .info p {
@@ -34,7 +49,6 @@
       font-size: 18px;
       display: flex;
       align-items: center;
-      justify-content: center;
       gap: 10px;
     }
 
@@ -59,19 +73,17 @@
       margin-top: 40px;
     }
 
-    /* ✅ Responsividade */
     @media (max-width: 600px) {
       .logo {
-        max-width: 180px;
+        max-width: 220px;
         margin-bottom: 20px;
       }
 
       .info p {
         margin: 14px 0;
         font-size: 16px;
-        flex-direction: row;
         flex-wrap: wrap;
-        gap: 8px;
+        justify-content: center;
       }
 
       .info {
@@ -81,28 +93,20 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="logo.png" alt="Logo Excell Engenharia" class="logo"/>
-    <div class="info">
-      <p><strong>EXCELL Engenharia de Telecomunicações Ltda</strong></p>
-      <p>CNPJ: 60.394.297/0001-49</p>
-      <p>
-        <i class="fab fa-whatsapp"></i>
-        <a href="https://wa.me/5543996437025" target="_blank">WhatsApp</a>
-      </p>
-      <p>
-        <i class="fab fa-instagram"></i>
-        <a href="https://instagram.com/excell_engenharia" target="_blank">Instagram</a>
-      </p>
-      <p>
-        <i class="fab fa-linkedin"></i>
-        <a href="https://linkedin.com/company/excell-engenharia" target="_blank">LinkedIn</a>
-      </p>
+  <div class="wrapper">
+    <div class="container">
+      <img src="logo.png" alt="Logo Excell Engenharia" class="logo"/>
+      <div class="info">
+        <p><strong>EXCELL Engenharia de Telecomunicações Ltda</strong></p>
+        <p>CNPJ: 60.394.297/0001-49</p>
+        <p><i class="fab fa-whatsapp"></i><a href="https://wa.me/5543996437025" target="_blank">WhatsApp</a></p>
+        <p><i class="fab fa-instagram"></i><a href="https://instagram.com/excell_engenharia" target="_blank">Instagram</a></p>
+        <p><i class="fab fa-linkedin"></i><a href="https://linkedin.com/company/excell-engenharia" target="_blank">LinkedIn</a></p>
+      </div>
+      <footer>
+        <p>© 2025 EXCELL Engenharia de Telecomunicações Ltda</p>
+      </footer>
     </div>
   </div>
-
-  <footer>
-    <p>© 2025 EXCELL Engenharia de Telecomunicações Ltda</p>
-  </footer>
 </body>
 </html>
